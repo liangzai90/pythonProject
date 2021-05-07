@@ -3,6 +3,8 @@ import urllib.parse
 import http.cookiejar
 import json
 
+# 将 Cookie 信息保存为 LWP 格式的文件
+
 url = 'http://site2.rjkflm.com:666/index/index/chklogin.html'
 data = bytes(urllib.parse.urlencode({'username':'henry','password':'heliang1990'}),encoding='utf-8')
 cookie_file = 'cookie.txt'     ## 保存cookie文件
